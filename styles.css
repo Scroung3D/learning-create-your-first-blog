@@ -6,7 +6,13 @@ body>header {
     padding: 10px;
 }
 
-/* Comment in CSS */
+/* Element Selector */
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -47,6 +53,7 @@ footer {
     border-left: 4px solid #00b300;
     padding-left: 15px;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 /* Multiple */
@@ -55,10 +62,25 @@ p, h2{
 }
 
 /* Descendants */
+
+/* Flexbox Container */
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Flexbox Items */
 nav li {
     font-size: large;
     font-weight: bold;
+    margin-right: 5px;
+    background-color: white;
+    padding: 3px;
+    flex-grow: 1;
+    text-align: center;
 }
+
+
 
 article p {
     font-size: 15.5px;
